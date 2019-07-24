@@ -1,0 +1,3 @@
+dumpfile=DEVMIG-ETLHST_DATA.dmp directory=MIGR_INST_DIR schemas=INSIS_MIGRATION_LF
+INCLUDE=TABLE:" IN (select table_name from all_all_tables where owner= and ( table_name like 'ETL_%' or table_name='MIGR_SRV_EVENT_LIST' or table_name like 'HST_%'  or table_name='RLG_LOCK_TBL' or table_name='MIG_PROCESS_STEPS'))" 
+content=data_only

@@ -1,0 +1,5251 @@
+Starting new spool
+Deployment directory is /media/sf_Shared/DZI/Migration/Code4DZI
+Checking files
+instance/service name is  pdborcl
+IP is  localhost
+port is  1521
+schema is  INSIS_MIGRATION_EY
+schema_pwd is  INSIS_MIGRATION_EY
+arch_schema is  INSIS_MIGRATION_EY_ARC
+arch_schema_pwd is  INSIS_MIGRATION_EY_ARC
+Deployment mode is  1
+MIGG2 filesystem creation.
+If exists in given directory, action will be skipped
+MIGG2 directory is '/migg/migg3'
+/migg/migg3/M01 was created
+/migg/migg3/M02 was created
+/migg/migg3/M03 was created
+/migg/migg3/M04 was created
+/migg/migg3/M08 was created
+/migg/migg3/M09 was created
+/migg/migg3/M10 was created
+/migg/migg3/M11 was created
+/migg/migg3/M14 was created
+/migg/migg3/M15 was created
+/migg/migg3/M16 was created
+/migg/migg3/M21 was created
+/migg/migg3/M24 was created
+/migg/migg3/M27 was created
+/migg/migg3/M28 was created
+/migg/migg3/M29 was created
+/migg/migg3/M31 was created
+/migg/migg3/M32 was created
+/migg/migg3/M34 was created
+/migg/migg3/M35 was created
+/migg/migg3/M37 was created
+/migg/migg3/M42 was created
+/migg/migg3/M43 was created
+/migg/migg3/M50 was created
+/migg/migg3/MIGG_SOURCES was created
+/migg/migg3/MIGG_ARCHIVE was created
+/migg/migg3/MIGG_CLIENTS was created
+/migg/migg3/MIGG_CLIENTS_ARCHIVE was created
+/migg/migg3/MIGG_ARCHIVE/M01 was created
+/migg/migg3/MIGG_ARCHIVE/M02 was created
+/migg/migg3/MIGG_ARCHIVE/M03 was created
+/migg/migg3/MIGG_ARCHIVE/M04 was created
+/migg/migg3/MIGG_ARCHIVE/M08 was created
+/migg/migg3/MIGG_ARCHIVE/M09 was created
+/migg/migg3/MIGG_ARCHIVE/M10 was created
+/migg/migg3/MIGG_ARCHIVE/M11 was created
+/migg/migg3/MIGG_ARCHIVE/M14 was created
+/migg/migg3/MIGG_ARCHIVE/M15 was created
+/migg/migg3/MIGG_ARCHIVE/M16 was created
+/migg/migg3/MIGG_ARCHIVE/M21 was created
+/migg/migg3/MIGG_ARCHIVE/M24 was created
+/migg/migg3/MIGG_ARCHIVE/M27 was created
+/migg/migg3/MIGG_ARCHIVE/M28 was created
+/migg/migg3/MIGG_ARCHIVE/M29 was created
+/migg/migg3/MIGG_ARCHIVE/M31 was created
+/migg/migg3/MIGG_ARCHIVE/M32 was created
+/migg/migg3/MIGG_ARCHIVE/M34 was created
+/migg/migg3/MIGG_ARCHIVE/M35 was created
+/migg/migg3/MIGG_ARCHIVE/M37 was created
+/migg/migg3/MIGG_ARCHIVE/M42 was created
+/migg/migg3/MIGG_ARCHIVE/M43 was created
+/migg/migg3/MIGG_ARCHIVE/M50 was created
+About to return to Installation directory path
+About to check for existence of all necessary environment database entities (tablespaces and users)
+All necessary database entities exist. Question to drop and recreate environment, irrespective of the fact that all DB entities exist, follows
+answer to drop-environment question is N 
+About to create MIGR_INST_DIR and grant dir privileges to new schema
+About to create MIGR_INST_DIR and grant dir privileges to new schema
+old   1: create OR REPLACE directory MIGR_INST_DIR as '&1'
+new   1: create OR REPLACE directory MIGR_INST_DIR as '/media/sf_Shared/DZI/Migration/Code4DZI'
+
+Directory created.
+
+old   1: GRANT all on directory MIGR_INST_DIR to &2
+new   1: GRANT all on directory MIGR_INST_DIR to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+About to drop previous deployment objects, if exist
+Packages Dropped                                                                
+Views Dropped                                                                   
+Tables Dropped                                                                  
+Synonyms Dropped                                                                
+Sequences Dropped                                                               
+
+PL/SQL procedure successfully completed.
+
+About to drop previous deployment objects in Archive schema, if exist
+old  15:                 and owner= '&1'       --'INSIS_MIGRATION_EY'
+new  15:                 and owner= 'INSIS_MIGRATION_EY_ARC'       --'INSIS_MIGRATION_EY'
+old  31:  --               and owner= '&1'
+new  31:  --               and owner= 'INSIS_MIGRATION_EY_ARC'
+old  49:                 and owner= '&1'
+new  49:                 and owner= 'INSIS_MIGRATION_EY_ARC'
+old  65:                 and owner= '&1'
+new  65:                 and owner= 'INSIS_MIGRATION_EY_ARC'
+old  82:                 and owner= '&1'
+new  82:                 and owner= 'INSIS_MIGRATION_EY_ARC'
+old  99:                 and sequence_owner= '&1'
+new  99:                 and sequence_owner= 'INSIS_MIGRATION_EY_ARC'
+Archive Schema Packages Dropped                                                 
+Archive Schema Views Dropped                                                    
+Archive Schema Tables Dropped                                                   
+Archive Schema Synonyms Dropped                                                 
+Archive Schema Sequences Dropped                                                
+
+PL/SQL procedure successfully completed.
+
+About to install DDL
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Index created.
+
+
+Index altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+About to grant privileges to migration schema
+old   1:   GRANT ALTER ANY TABLE TO &1
+new   1:   GRANT ALTER ANY TABLE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.p_property TO &1  
+new   1:   GRANT SELECT ON INSIS_CUST.p_property TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON INSIS_CUST.p_property TO &1  
+new   1:   GRANT INSERT ON INSIS_CUST.p_property TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_CUST.p_property TO &1
+new   1:   GRANT UPDATE ON INSIS_CUST.p_property TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.p_property_ADDRESS TO &1  
+new   1:   GRANT SELECT ON INSIS_CUST.p_property_ADDRESS TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON INSIS_CUST.p_property_ADDRESS TO &1  
+new   1:   GRANT INSERT ON INSIS_CUST.p_property_ADDRESS TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_CUST.p_property_ADDRESS TO &1
+new   1:   GRANT UPDATE ON INSIS_CUST.p_property_ADDRESS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_SUBT TO &1
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_SUBT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_TRANSLATIONS TO &1
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_TRANSLATIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_GEN_V10.policy_endorsements TO &1
+new   1:   GRANT UPDATE ON INSIS_GEN_V10.policy_endorsements TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_sys_V10.doc_documents TO &1
+new   1:   GRANT UPDATE ON INSIS_sys_V10.doc_documents TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_CUST.CUST_POL_BO TO &1
+new   1:   GRANT EXECUTE ON INSIS_CUST.CUST_POL_BO TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON SYS.DBA_SCHEDULER_JOBS TO &1
+new   1:   GRANT SELECT ON SYS.DBA_SCHEDULER_JOBS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON SYS.DBMS_ALERT TO &1
+new   1:   GRANT EXECUTE ON SYS.DBMS_ALERT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON SYS.DBMS_ALERT_INFO TO &1
+new   1:   GRANT SELECT ON SYS.DBMS_ALERT_INFO TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO &1
+new   1:   GRANT SELECT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO &1
+new   1:   GRANT INSERT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT execute  ON INSIS_GEN_V10.P_COMMISSION_TYPE TO &1 
+new   1:   GRANT execute  ON INSIS_GEN_V10.P_COMMISSION_TYPE TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.CUST_CORRESPONDENCE TO &1
+new   1:   GRANT SELECT ON INSIS_CUST.CUST_CORRESPONDENCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_CUST.CUST_CORRESPONDENCE TO &1
+new   1:   GRANT UPDATE ON INSIS_CUST.CUST_CORRESPONDENCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.POLICY_LABEL TO &1
+new   1:   GRANT SELECT ON INSIS_CUST.POLICY_LABEL TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.UW_LIST TO &1 
+new   1:   GRANT SELECT ON INSIS_CUST.UW_LIST TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT execute  ON INSIS_CUST.P_CUST_UWLIST_TYPE TO &1 
+new   1:   GRANT execute  ON INSIS_CUST.P_CUST_UWLIST_TYPE TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT execute ON INSIS_CUST.GVAR_CUST   TO &1 
+new   1:   GRANT execute ON INSIS_CUST.GVAR_CUST   TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:    GRANT execute ON INSIS_CUST.SRV_CUST_POL_DM  TO &1 
+new   1:    GRANT execute ON INSIS_CUST.SRV_CUST_POL_DM  TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.BOAT_REGISTRY TO &1
+new   1:   GRANT SELECT ON INSIS_CUST.BOAT_REGISTRY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON INSIS_CUST.BOAT_REGISTRY TO &1
+new   1:   GRANT INSERT ON INSIS_CUST.BOAT_REGISTRY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_blc_v10.blc_values TO &1
+new   1:   GRANT SELECT ON insis_gen_blc_v10.blc_values TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON insis_gen_blc_v10.blc_values TO &1
+new   1:   GRANT UPDATE ON insis_gen_blc_v10.blc_values TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON  insis_gen_blc_v10.blc_lookups  TO &1
+new   1:   GRANT SELECT ON  insis_gen_blc_v10.blc_lookups  TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:    GRANT UPDATE ON  insis_gen_blc_v10.blc_lookups  TO &1
+new   1:    GRANT UPDATE ON  insis_gen_blc_v10.blc_lookups  TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:                                     grant execute on INSIS_CUST.CUST_POL_DS  to &1
+new   1:                                     grant execute on INSIS_CUST.CUST_POL_DS  to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:                                     grant select on INSIS_SYS_V10.QUEST_QUESTIONS    to  &1
+new   1:                                     grant select on INSIS_SYS_V10.QUEST_QUESTIONS    to  INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:                                              grant execute on INSIS_SYS_V10.SYS_DAYS    to &1
+new   1:                                              grant execute on INSIS_SYS_V10.SYS_DAYS    to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:     GRANT UPDATE ON INSIS_GEN_V10.INSURED_OBJECT TO      &1 
+new   1:     GRANT UPDATE ON INSIS_GEN_V10.INSURED_OBJECT TO      INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:     GRANT EXECUTE ON  INSIS_CUST.PPL_TYPES TO &1
+new   1:     GRANT EXECUTE ON  INSIS_CUST.PPL_TYPES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT execute ON  INSIS_CUST.CUST_POL_DM    TO &1 
+new   1:   GRANT execute ON  INSIS_CUST.CUST_POL_DM    TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   grant execute  on INSIS_CUST.SRV_CUST_BO to &1  
+new   1:   grant execute  on INSIS_CUST.SRV_CUST_BO to INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1: GRANT SCHEDULER_ADMIN TO &1
+new   1: GRANT SCHEDULER_ADMIN TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CONNECT TO &1
+new   1: GRANT CONNECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT RESOURCE TO &1
+new   1: GRANT RESOURCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: grant execute on sys.dbms_lock to &1
+new   1: grant execute on sys.dbms_lock to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: grant DATAPUMP_IMP_FULL_DATABASE to &1
+new   1: grant DATAPUMP_IMP_FULL_DATABASE to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT MANAGE SCHEDULER TO &1
+new   1: GRANT MANAGE SCHEDULER TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG CONNECT SESSION TO &1
+new   1: GRANT DEBUG CONNECT SESSION TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY DIRECTORY TO &1
+new   1: GRANT CREATE ANY DIRECTORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE SYNONYM TO &1
+new   1: GRANT CREATE SYNONYM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE TABLE TO &1
+new   1: GRANT CREATE TABLE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE PROCEDURE TO &1
+new   1: GRANT CREATE PROCEDURE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE PUBLIC SYNONYM TO &1
+new   1: GRANT CREATE PUBLIC SYNONYM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY SYNONYM TO &1
+new   1: GRANT CREATE ANY SYNONYM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DROP ANY DIRECTORY TO &1
+new   1: GRANT DROP ANY DIRECTORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ANY PROCEDURE TO &1
+new   1: GRANT DEBUG ANY PROCEDURE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE VIEW TO &1
+new   1: GRANT CREATE VIEW TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY TABLE TO &1
+new   1: GRANT CREATE ANY TABLE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE JOB TO &1
+new   1: GRANT CREATE JOB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE SEQUENCE TO &1
+new   1: GRANT CREATE SEQUENCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE SESSION TO &1
+new   1: GRANT CREATE SESSION TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE EXTERNAL JOB TO &1
+new   1: GRANT CREATE EXTERNAL JOB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY PROCEDURE TO &1
+new   1: GRANT CREATE ANY PROCEDURE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UNLIMITED TABLESPACE TO &1
+new   1: GRANT UNLIMITED TABLESPACE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_GEN_CFG_V10.GVAR_RB TO &1
+new   1: GRANT DEBUG ON INSIS_GEN_CFG_V10.GVAR_RB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO &1
+new   1: GRANT DEBUG ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.INSIS_CONTEXT TO &1
+new   1: GRANT DEBUG ON INSIS_SYS_V10.INSIS_CONTEXT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.PARAM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.PARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_CONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_CONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXTATR TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXTATR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERR TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERRMSG TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERRMSG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_ERROR TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_ERROR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVEVENT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVEVENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_LOG TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_LOG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVPARAM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVPARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_DOC TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_DOC TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_QUEST TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_QUEST TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_SYS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_SYS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_WFM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_WFM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYS_DS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYS_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVSYSPARAMS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVSYSPARAMS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_WFM_BO TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_WFM_BO TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_BASE_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_BASE_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_ENV TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_ENV TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_GEN_CFG_V10.GVAR_RB TO &1
+new   1: GRANT EXECUTE ON INSIS_GEN_CFG_V10.GVAR_RB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO &1
+new   1: GRANT EXECUTE ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.INSIS_CONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.INSIS_CONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.PARAM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.PARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_CONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_CONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXTATR TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXTATR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERR TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERRMSG TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERRMSG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_ERROR TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_ERROR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVEVENT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVEVENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_LOG TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_LOG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVPARAM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVPARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_DOC TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_DOC TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_QUEST TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_QUEST TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_SYS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_SYS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_WFM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_WFM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_QUESTION_DATA TO &1
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_QUESTION_DATA TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYS_DS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYS_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVSYSPARAMS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVSYSPARAMS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_WFM_BO TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_WFM_BO TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_BASE_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_BASE_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_ENV TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_ENV TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.GEN_COVERS_SELECT TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.GEN_COVERS_SELECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.GEN_RISK_TERITORY TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.GEN_RISK_TERITORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.INSURED_OBJECT TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.INSURED_OBJECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.O_ADDEQUIPMENT TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.O_ADDEQUIPMENT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.O_OBJECTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.O_OBJECTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.O_SHIP TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_GEN_V10.O_SHIP TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ADDRESSES TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ADDRESSES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_ADDRESSES TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_ADDRESSES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_AGENTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_AGENTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_CONDITIONS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_CONDITIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_CONDITIONS TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_CONDITIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_INFO TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_INFO TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS_SEQ TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS_SEQ TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PREM_FLG TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PREM_FLG TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ENDORSEMENTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ENDORSEMENTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.PREM_INST_INTERIM TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.PREM_INST_INTERIM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.PREM_INST_INTERIM TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.PREM_INST_INTERIM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON  INSIS_CUST.POLICY_RENEWALS_MIG_SEQ TO &1
+new   1: GRANT SELECT ON  INSIS_CUST.POLICY_RENEWALS_MIG_SEQ TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT INSERT ON  INSIS_CUST.POLICY_RENEWALS_MIG TO &1
+new   1: GRANT INSERT ON  INSIS_CUST.POLICY_RENEWALS_MIG TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ADDRESS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ADDRESS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_AGENTS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_AGENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_BENEFICIENTS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_BENEFICIENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_CLIENTS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_CLIENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_OFFICES TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_OFFICES TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_PEOPLE TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_PEOPLE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ROLE TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ROLE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_UDFLD TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_UDFLD TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_COVERS_SELECT TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_COVERS_SELECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_RISK_TERITORY TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_RISK_TERITORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE on INSIS_GEN_V10.POLICY_ENDORSEMENTS to &1
+new   1: GRANT UPDATE on INSIS_GEN_V10.POLICY_ENDORSEMENTS to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT update on INSIS_GEN_V10.O_SHIP    to &1
+new   1: GRANT update on INSIS_GEN_V10.O_SHIP    to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT update on INSIS_SYS_V10.DOC_DOCUMENTS to &1
+new   1: GRANT update on INSIS_SYS_V10.DOC_DOCUMENTS to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:  GRANT update on INSIS_GEN_V10.POLICY   to &1
+new   1:  GRANT update on INSIS_GEN_V10.POLICY   to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT execute on INSIS_CUST.CUST_POL_BO to &1
+new   1:   GRANT execute on INSIS_CUST.CUST_POL_BO to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.POL_TYPES TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.POL_TYPES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INSOBJ_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INSOBJ_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_POLICY_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_POLICY_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_COVER_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_COVER_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INDEMNITY_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INDEMNITY_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.GVAR_PAS TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.GVAR_PAS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.CURRENCY TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.CURRENCY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_NAMES_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_NAMES_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE  ON INSIS_CUST.POLICY_EXTRA_ATTR TO &1
+new   1:   GRANT UPDATE  ON INSIS_CUST.POLICY_EXTRA_ATTR TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT  ON INSIS_GEN_V10.GEN_RISK_DISCOUNT TO &1
+new   1:   GRANT SELECT  ON INSIS_GEN_V10.GEN_RISK_DISCOUNT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_DISCOUNT_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_DISCOUNT_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT  ON INSIS_GEN_V10.POLICY_ENGAGEMENT_BILLING TO &1
+new   1:   GRANT SELECT  ON INSIS_GEN_V10.POLICY_ENGAGEMENT_BILLING TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_ENGAGEMENT_BILLING_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_ENGAGEMENT_BILLING_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN_FRACT to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN_FRACT to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION_FRACT to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION_FRACT to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HST_OBJECT_TYPE to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HST_OBJECT_TYPE to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.gen_risk_covered to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.gen_risk_covered to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on insis_gen_v10.O_PROPERTY to &1 WITH GRANT OPTION
+new   1: GRANT select on insis_gen_v10.O_PROPERTY to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HST_POLICY_STATE to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HST_POLICY_STATE to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.O_ACCINSURED to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.O_ACCINSURED to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON SYS.V_$THREAD to &1
+new   1: GRANT SELECT ON SYS.V_$THREAD to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON SYS.V_$parameter to &1
+new   1: GRANT SELECT ON SYS.V_$parameter to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_STAFF TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_STAFF TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_USER_ACCOUNTS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_USER_ACCOUNTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ANNEX TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ANNEX TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX_REASON TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX_REASON TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ANNEX_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ANNEX_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HT_ANNEX_REASON TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HT_ANNEX_REASON TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_WAY TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_WAY TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_MODE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_MODE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CFG_NL_PRODUCT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CFG_NL_PRODUCT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_LOB TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_LOB TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENG_POLICIES TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENG_POLICIES TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_v10.HST_ENG_POLICY_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_v10.HST_ENG_POLICY_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENGAGEMENT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENGAGEMENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ENGAGEMENT_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ENGAGEMENT_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_v10.HST_POLICY_STATE_AUX TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_v10.HST_POLICY_STATE_AUX TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_covers TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_covers TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.CPR_COVER TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.CPR_COVER TO INSIS_MIGRATION_EY WITH GRANT OPTION
+  GRANT SELECT ON insis_gen_cfg_v10.CPR_COVER TO INSIS_MIGRATION_EY WITH GRANT OPTION
+                                    *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.CFG_NL_PRODUCT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.CFG_NL_PRODUCT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_STATUS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_STATUS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_GL_FRACT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_GL_FRACT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_TARIFF_RULE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_TARIFF_RULE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_COVER_DESIGNATION TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_COVER_DESIGNATION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_IV_RULE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_IV_RULE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_PRODUCT_LOB TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_PRODUCT_LOB TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_product TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_product TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_objects TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_objects TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPR_OBJECTS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPR_OBJECTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+  GRANT SELECT ON INSIS_GEN_CFG_V10.CPR_OBJECTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+                                    *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.insured_object TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.insured_object TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ACTIVITY_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ACTIVITY_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE_AUX TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE_AUX TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_BASE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_BASE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_DUR_DIMENSION TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_DUR_DIMENSION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_OBJECT_STATE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_OBJECT_STATE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCATION_RISK_CLASS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCATION_RISK_CLASS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCVAL_DIMENSION TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCVAL_DIMENSION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HT_RISK_CLASS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HT_RISK_CLASS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.gen_annex TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.gen_annex TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+End grands!!!
+Start inser data
+old   1: create OR REPLACE directory MIGR_INST_DIR as '&1'
+new   1: create OR REPLACE directory MIGR_INST_DIR as '/media/sf_Shared/DZI/Migration/Code4DZI'
+
+Directory created.
+
+old   1: GRANT all on directory MIGR_INST_DIR to &2
+new   1: GRANT all on directory MIGR_INST_DIR to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+Tables Truncated                                                                
+
+PL/SQL procedure successfully completed.
+
+About to grant privileges to migration schema
+old   1:   GRANT ALTER ANY TABLE TO &1
+new   1:   GRANT ALTER ANY TABLE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.p_property TO &1  
+new   1:   GRANT SELECT ON INSIS_CUST.p_property TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON INSIS_CUST.p_property TO &1  
+new   1:   GRANT INSERT ON INSIS_CUST.p_property TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_CUST.p_property TO &1
+new   1:   GRANT UPDATE ON INSIS_CUST.p_property TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.p_property_ADDRESS TO &1  
+new   1:   GRANT SELECT ON INSIS_CUST.p_property_ADDRESS TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON INSIS_CUST.p_property_ADDRESS TO &1  
+new   1:   GRANT INSERT ON INSIS_CUST.p_property_ADDRESS TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_CUST.p_property_ADDRESS TO &1
+new   1:   GRANT UPDATE ON INSIS_CUST.p_property_ADDRESS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_SUBT TO &1
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_SUBT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_TRANSLATIONS TO &1
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_TRANSLATIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_GEN_V10.policy_endorsements TO &1
+new   1:   GRANT UPDATE ON INSIS_GEN_V10.policy_endorsements TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_sys_V10.doc_documents TO &1
+new   1:   GRANT UPDATE ON INSIS_sys_V10.doc_documents TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_CUST.CUST_POL_BO TO &1
+new   1:   GRANT EXECUTE ON INSIS_CUST.CUST_POL_BO TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON SYS.DBA_SCHEDULER_JOBS TO &1
+new   1:   GRANT SELECT ON SYS.DBA_SCHEDULER_JOBS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON SYS.DBMS_ALERT TO &1
+new   1:   GRANT EXECUTE ON SYS.DBMS_ALERT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON SYS.DBMS_ALERT_INFO TO &1
+new   1:   GRANT SELECT ON SYS.DBMS_ALERT_INFO TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO &1
+new   1:   GRANT SELECT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO &1
+new   1:   GRANT INSERT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT execute  ON INSIS_GEN_V10.P_COMMISSION_TYPE TO &1 
+new   1:   GRANT execute  ON INSIS_GEN_V10.P_COMMISSION_TYPE TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.CUST_CORRESPONDENCE TO &1
+new   1:   GRANT SELECT ON INSIS_CUST.CUST_CORRESPONDENCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_CUST.CUST_CORRESPONDENCE TO &1
+new   1:   GRANT UPDATE ON INSIS_CUST.CUST_CORRESPONDENCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.POLICY_LABEL TO &1
+new   1:   GRANT SELECT ON INSIS_CUST.POLICY_LABEL TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.UW_LIST TO &1 
+new   1:   GRANT SELECT ON INSIS_CUST.UW_LIST TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT execute  ON INSIS_CUST.P_CUST_UWLIST_TYPE TO &1 
+new   1:   GRANT execute  ON INSIS_CUST.P_CUST_UWLIST_TYPE TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT execute ON INSIS_CUST.GVAR_CUST   TO &1 
+new   1:   GRANT execute ON INSIS_CUST.GVAR_CUST   TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:    GRANT execute ON INSIS_CUST.SRV_CUST_POL_DM  TO &1 
+new   1:    GRANT execute ON INSIS_CUST.SRV_CUST_POL_DM  TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.BOAT_REGISTRY TO &1
+new   1:   GRANT SELECT ON INSIS_CUST.BOAT_REGISTRY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON INSIS_CUST.BOAT_REGISTRY TO &1
+new   1:   GRANT INSERT ON INSIS_CUST.BOAT_REGISTRY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_blc_v10.blc_values TO &1
+new   1:   GRANT SELECT ON insis_gen_blc_v10.blc_values TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON insis_gen_blc_v10.blc_values TO &1
+new   1:   GRANT UPDATE ON insis_gen_blc_v10.blc_values TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON  insis_gen_blc_v10.blc_lookups  TO &1
+new   1:   GRANT SELECT ON  insis_gen_blc_v10.blc_lookups  TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:    GRANT UPDATE ON  insis_gen_blc_v10.blc_lookups  TO &1
+new   1:    GRANT UPDATE ON  insis_gen_blc_v10.blc_lookups  TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:                                     grant execute on INSIS_CUST.CUST_POL_DS  to &1
+new   1:                                     grant execute on INSIS_CUST.CUST_POL_DS  to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:                                     grant select on INSIS_SYS_V10.QUEST_QUESTIONS    to  &1
+new   1:                                     grant select on INSIS_SYS_V10.QUEST_QUESTIONS    to  INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:                                              grant execute on INSIS_SYS_V10.SYS_DAYS    to &1
+new   1:                                              grant execute on INSIS_SYS_V10.SYS_DAYS    to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:     GRANT UPDATE ON INSIS_GEN_V10.INSURED_OBJECT TO      &1 
+new   1:     GRANT UPDATE ON INSIS_GEN_V10.INSURED_OBJECT TO      INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:     GRANT EXECUTE ON  INSIS_CUST.PPL_TYPES TO &1
+new   1:     GRANT EXECUTE ON  INSIS_CUST.PPL_TYPES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT execute ON  INSIS_CUST.CUST_POL_DM    TO &1 
+new   1:   GRANT execute ON  INSIS_CUST.CUST_POL_DM    TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   grant execute  on INSIS_CUST.SRV_CUST_BO to &1  
+new   1:   grant execute  on INSIS_CUST.SRV_CUST_BO to INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1: GRANT SCHEDULER_ADMIN TO &1
+new   1: GRANT SCHEDULER_ADMIN TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CONNECT TO &1
+new   1: GRANT CONNECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT RESOURCE TO &1
+new   1: GRANT RESOURCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: grant execute on sys.dbms_lock to &1
+new   1: grant execute on sys.dbms_lock to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: grant DATAPUMP_IMP_FULL_DATABASE to &1
+new   1: grant DATAPUMP_IMP_FULL_DATABASE to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT MANAGE SCHEDULER TO &1
+new   1: GRANT MANAGE SCHEDULER TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG CONNECT SESSION TO &1
+new   1: GRANT DEBUG CONNECT SESSION TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY DIRECTORY TO &1
+new   1: GRANT CREATE ANY DIRECTORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE SYNONYM TO &1
+new   1: GRANT CREATE SYNONYM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE TABLE TO &1
+new   1: GRANT CREATE TABLE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE PROCEDURE TO &1
+new   1: GRANT CREATE PROCEDURE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE PUBLIC SYNONYM TO &1
+new   1: GRANT CREATE PUBLIC SYNONYM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY SYNONYM TO &1
+new   1: GRANT CREATE ANY SYNONYM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DROP ANY DIRECTORY TO &1
+new   1: GRANT DROP ANY DIRECTORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ANY PROCEDURE TO &1
+new   1: GRANT DEBUG ANY PROCEDURE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE VIEW TO &1
+new   1: GRANT CREATE VIEW TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY TABLE TO &1
+new   1: GRANT CREATE ANY TABLE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE JOB TO &1
+new   1: GRANT CREATE JOB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE SEQUENCE TO &1
+new   1: GRANT CREATE SEQUENCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE SESSION TO &1
+new   1: GRANT CREATE SESSION TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE EXTERNAL JOB TO &1
+new   1: GRANT CREATE EXTERNAL JOB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY PROCEDURE TO &1
+new   1: GRANT CREATE ANY PROCEDURE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UNLIMITED TABLESPACE TO &1
+new   1: GRANT UNLIMITED TABLESPACE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_GEN_CFG_V10.GVAR_RB TO &1
+new   1: GRANT DEBUG ON INSIS_GEN_CFG_V10.GVAR_RB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO &1
+new   1: GRANT DEBUG ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.INSIS_CONTEXT TO &1
+new   1: GRANT DEBUG ON INSIS_SYS_V10.INSIS_CONTEXT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.PARAM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.PARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_CONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_CONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXTATR TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXTATR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERR TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERRMSG TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERRMSG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_ERROR TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_ERROR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVEVENT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVEVENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_LOG TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_LOG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVPARAM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVPARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_DOC TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_DOC TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_QUEST TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_QUEST TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_SYS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_SYS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_WFM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_WFM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYS_DS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYS_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVSYSPARAMS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVSYSPARAMS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_WFM_BO TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_WFM_BO TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_BASE_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_BASE_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_ENV TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_ENV TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_GEN_CFG_V10.GVAR_RB TO &1
+new   1: GRANT EXECUTE ON INSIS_GEN_CFG_V10.GVAR_RB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO &1
+new   1: GRANT EXECUTE ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.INSIS_CONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.INSIS_CONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.PARAM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.PARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_CONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_CONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXTATR TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXTATR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERR TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERRMSG TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERRMSG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_ERROR TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_ERROR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVEVENT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVEVENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_LOG TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_LOG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVPARAM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVPARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_DOC TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_DOC TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_QUEST TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_QUEST TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_SYS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_SYS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_WFM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_WFM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_QUESTION_DATA TO &1
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_QUESTION_DATA TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYS_DS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYS_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVSYSPARAMS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVSYSPARAMS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_WFM_BO TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_WFM_BO TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_BASE_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_BASE_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_ENV TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_ENV TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.GEN_COVERS_SELECT TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.GEN_COVERS_SELECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.GEN_RISK_TERITORY TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.GEN_RISK_TERITORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.INSURED_OBJECT TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.INSURED_OBJECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.O_ADDEQUIPMENT TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.O_ADDEQUIPMENT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.O_OBJECTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.O_OBJECTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.O_SHIP TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_GEN_V10.O_SHIP TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ADDRESSES TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ADDRESSES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_ADDRESSES TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_ADDRESSES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_AGENTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_AGENTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_CONDITIONS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_CONDITIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_CONDITIONS TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_CONDITIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_INFO TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_INFO TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS_SEQ TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS_SEQ TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PREM_FLG TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PREM_FLG TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ENDORSEMENTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ENDORSEMENTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.PREM_INST_INTERIM TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.PREM_INST_INTERIM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.PREM_INST_INTERIM TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.PREM_INST_INTERIM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON  INSIS_CUST.POLICY_RENEWALS_MIG_SEQ TO &1
+new   1: GRANT SELECT ON  INSIS_CUST.POLICY_RENEWALS_MIG_SEQ TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT INSERT ON  INSIS_CUST.POLICY_RENEWALS_MIG TO &1
+new   1: GRANT INSERT ON  INSIS_CUST.POLICY_RENEWALS_MIG TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ADDRESS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ADDRESS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_AGENTS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_AGENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_BENEFICIENTS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_BENEFICIENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_CLIENTS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_CLIENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_OFFICES TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_OFFICES TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_PEOPLE TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_PEOPLE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ROLE TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ROLE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_UDFLD TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_UDFLD TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_COVERS_SELECT TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_COVERS_SELECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_RISK_TERITORY TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_RISK_TERITORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE on INSIS_GEN_V10.POLICY_ENDORSEMENTS to &1
+new   1: GRANT UPDATE on INSIS_GEN_V10.POLICY_ENDORSEMENTS to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT update on INSIS_GEN_V10.O_SHIP    to &1
+new   1: GRANT update on INSIS_GEN_V10.O_SHIP    to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT update on INSIS_SYS_V10.DOC_DOCUMENTS to &1
+new   1: GRANT update on INSIS_SYS_V10.DOC_DOCUMENTS to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:  GRANT update on INSIS_GEN_V10.POLICY   to &1
+new   1:  GRANT update on INSIS_GEN_V10.POLICY   to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT execute on INSIS_CUST.CUST_POL_BO to &1
+new   1:   GRANT execute on INSIS_CUST.CUST_POL_BO to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.POL_TYPES TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.POL_TYPES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INSOBJ_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INSOBJ_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_POLICY_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_POLICY_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_COVER_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_COVER_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INDEMNITY_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INDEMNITY_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.GVAR_PAS TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.GVAR_PAS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.CURRENCY TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.CURRENCY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_NAMES_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_NAMES_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE  ON INSIS_CUST.POLICY_EXTRA_ATTR TO &1
+new   1:   GRANT UPDATE  ON INSIS_CUST.POLICY_EXTRA_ATTR TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT  ON INSIS_GEN_V10.GEN_RISK_DISCOUNT TO &1
+new   1:   GRANT SELECT  ON INSIS_GEN_V10.GEN_RISK_DISCOUNT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_DISCOUNT_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_DISCOUNT_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT  ON INSIS_GEN_V10.POLICY_ENGAGEMENT_BILLING TO &1
+new   1:   GRANT SELECT  ON INSIS_GEN_V10.POLICY_ENGAGEMENT_BILLING TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_ENGAGEMENT_BILLING_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_ENGAGEMENT_BILLING_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN_FRACT to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN_FRACT to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION_FRACT to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION_FRACT to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HST_OBJECT_TYPE to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HST_OBJECT_TYPE to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.gen_risk_covered to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.gen_risk_covered to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on insis_gen_v10.O_PROPERTY to &1 WITH GRANT OPTION
+new   1: GRANT select on insis_gen_v10.O_PROPERTY to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HST_POLICY_STATE to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HST_POLICY_STATE to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.O_ACCINSURED to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.O_ACCINSURED to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON SYS.V_$THREAD to &1
+new   1: GRANT SELECT ON SYS.V_$THREAD to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON SYS.V_$parameter to &1
+new   1: GRANT SELECT ON SYS.V_$parameter to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_STAFF TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_STAFF TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_USER_ACCOUNTS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_USER_ACCOUNTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ANNEX TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ANNEX TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX_REASON TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX_REASON TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ANNEX_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ANNEX_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HT_ANNEX_REASON TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HT_ANNEX_REASON TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_WAY TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_WAY TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_MODE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_MODE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CFG_NL_PRODUCT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CFG_NL_PRODUCT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_LOB TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_LOB TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENG_POLICIES TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENG_POLICIES TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_v10.HST_ENG_POLICY_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_v10.HST_ENG_POLICY_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENGAGEMENT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENGAGEMENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ENGAGEMENT_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ENGAGEMENT_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_v10.HST_POLICY_STATE_AUX TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_v10.HST_POLICY_STATE_AUX TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_covers TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_covers TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.CPR_COVER TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.CPR_COVER TO INSIS_MIGRATION_EY WITH GRANT OPTION
+  GRANT SELECT ON insis_gen_cfg_v10.CPR_COVER TO INSIS_MIGRATION_EY WITH GRANT OPTION
+                                    *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.CFG_NL_PRODUCT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.CFG_NL_PRODUCT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_STATUS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_STATUS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_GL_FRACT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_GL_FRACT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_TARIFF_RULE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_TARIFF_RULE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_COVER_DESIGNATION TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_COVER_DESIGNATION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_IV_RULE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_IV_RULE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_PRODUCT_LOB TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_PRODUCT_LOB TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_product TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_product TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_objects TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_objects TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPR_OBJECTS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPR_OBJECTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+  GRANT SELECT ON INSIS_GEN_CFG_V10.CPR_OBJECTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+                                    *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.insured_object TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.insured_object TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ACTIVITY_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ACTIVITY_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE_AUX TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE_AUX TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_BASE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_BASE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_DUR_DIMENSION TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_DUR_DIMENSION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_OBJECT_STATE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_OBJECT_STATE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCATION_RISK_CLASS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCATION_RISK_CLASS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCVAL_DIMENSION TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCVAL_DIMENSION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HT_RISK_CLASS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HT_RISK_CLASS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.gen_annex TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.gen_annex TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+About to check if configuration tables are empty
+About to check if configuration tables are empty
+Target schema is empty. Data import will follow
+
+;;; 
+Import: Release 12.1.0.2.0 - Production on Tue Jul 23 07:04:07 2019
+
+Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+Master table "INSIS_MIGRATION_EY"."SYS_IMPORT_SCHEMA_01" successfully loaded/unloaded
+Starting "INSIS_MIGRATION_EY"."SYS_IMPORT_SCHEMA_01":  INSIS_MIGRATION_EY/********@localhost:1521/pdborcl PARFILE=restore_ETL_HST_data1.par remap_schema=INSIS_MIGRATION_LF:INSIS_MIGRATION_EY LOGFILE=import.log 
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+. . imported "INSIS_MIGRATION_EY"."ETL_ENGINE"           6.434 MB    2461 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_REPORTS_DEF"      516.1 KB      22 rows
+. . imported "INSIS_MIGRATION_EY"."HST_GEN_DISCOUNTS"    581.2 KB     359 rows
+. . imported "INSIS_MIGRATION_EY"."HST_GEN_DISCOUNTS_COPY"  300.9 KB     191 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_OUTHOUSE_LABELS_MAP"  238.2 KB    8650 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGR_MAPS_INTERMEDIATE"  169.0 KB     160 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_OFF_DEF"          131.3 KB     455 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_POL_OBJECT_DEF"   123.8 KB      62 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_PRODUCT_DEF"      96.81 KB     128 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_SA_IA"            116.1 KB     172 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OFFER_QUESTIONS"  97.96 KB     159 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BUILDING_VILLA_QUESTIONS"  48.60 KB      62 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_COOP_QUESTIONS"  66.75 KB      90 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_ONLY_QUESTIONS"  68.46 KB      90 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_CONT_ONLY_QUEST"  49.87 KB      62 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_COOP_QUESTIONS"  52.75 KB      65 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_H_QUESTIONS"  48.53 KB      61 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_MOBILE_H_QUESTIONS"  49.37 KB      61 rows
+. . imported "INSIS_MIGRATION_EY"."HST_POLICY_DEDUCTIBLES"  40.90 KB     828 rows
+. . imported "INSIS_MIGRATION_EY"."HST_VILLAHEM_QUESTIONS"  62.57 KB      85 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_API_PREFERENCES"  6.039 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_API_STEPS"        6.687 KB      11 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_BOLAG_INFO"       8.351 KB      23 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_COVER_UPDATE_RULES"     10 KB      14 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_EMAIL_LIST"       7.585 KB      35 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_EMAIL_NOTIFICATIONS"  10.10 KB      29 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_IA_INSRPRD_CONFIG"  16.42 KB      16 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_JOB_CONFIGURATION"  9.484 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_LOCK_CONFIGURATION"  6.429 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGG_SOURCES"     30.24 KB     748 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGRATION_CONDITIONS"  8.687 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGRATION_RULES"  23.94 KB      31 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGR_FLD_RULES"   10.70 KB      12 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_OBJ_EXCLUSION_RULES"  12.47 KB      51 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_PARALLEL_LEVEL_PER_TIME"  7.078 KB      24 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_PROCESS_RESUME_CONFIG"  7.437 KB      12 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_PRODUCT_OBJECTS"  14.64 KB      62 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_SETUP_INFO"       23.26 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_TBL_DEF"          16.97 KB      56 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_VIEW_TBLS"        20.88 KB     441 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ACCIDENT_COVERS"  9.960 KB       9 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ACCIDENT_TYPES"   7.695 KB       6 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ACC_ENDORSEMENTS"  9.937 KB      30 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ACC_LUST_QUEST"   9.406 KB       2 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ADDRESS_TYPES"    6.492 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ALL_RISK_TYPES"   6.320 KB      13 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_COVERS"      10.78 KB       9 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_ENGINE_TYPES"  8.179 KB       7 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_MTRL"        7.335 KB      10 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_QUESTIONS"   11.50 KB       8 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_TYPES"       7.476 KB       4 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BUILDING_VILLA_COVERS"  17.39 KB      22 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BUILDING_VILLA_TYPES"  7.890 KB       9 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_COOP_COVERS"  13.57 KB      13 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_COOP_TYPES"  8.093 KB      14 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_ONLY_COVERS"  12.69 KB      11 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_ONLY_TYPES"  7.984 KB      12 rows
+. . imported "INSIS_MIGRATION_EY"."HST_COVER_DEDUCTIBLES"  15.43 KB      90 rows
+. . imported "INSIS_MIGRATION_EY"."HST_DEFAULT_AGENT"    5.851 KB      23 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ENDORSEMENTS"     9.476 KB       2 rows
+. . imported "INSIS_MIGRATION_EY"."HST_HOME_TYPES"       9.031 KB      18 rows
+. . imported "INSIS_MIGRATION_EY"."HST_INDIVIDUAL_COV_COVERS"  11.33 KB       9 rows
+. . imported "INSIS_MIGRATION_EY"."HST_INDIVIDUAL_COV_TYPES"  7.695 KB       8 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_CONT_ONLY_COVERS"  8.835 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_CONT_ONLY_TYPES"  7.343 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_COOP_COVERS"  9.265 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_COOP_TYPES"  7.382 KB       2 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_COVERS"   16.83 KB      18 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_HOME_TYPES"  7.640 KB       6 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_MOBILE_COVERS"  11.60 KB       7 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_MOB_HOME_TYPES"  7.429 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."HST_MAND_DOCUMENTS"   30.78 KB     132 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OBJECT_DEDUCTIBLES"  11.17 KB     217 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OBJECT_DEDUCTIBLES_COPY"  11.17 KB     216 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OFFER_QUESTIONS_NO_CR"  41.27 KB      65 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OFFICES"          10.60 KB      24 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OUTHOUSE_LABELS"  10.85 KB      52 rows
+. . imported "INSIS_MIGRATION_EY"."HST_POLICY_DEDUCTIBLES_COPY"  39.81 KB     802 rows
+. . imported "INSIS_MIGRATION_EY"."HST_SE_BANK_NUMBER"   9.546 KB      55 rows
+. . imported "INSIS_MIGRATION_EY"."HST_TRAVEL_COVERS"    9.929 KB       5 rows
+. . imported "INSIS_MIGRATION_EY"."HST_TRAVEL_TYPES"     7.437 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."HST_UNION_NAME"       6.734 KB      71 rows
+. . imported "INSIS_MIGRATION_EY"."HST_VILLAHEM_COVERS"  17.97 KB      28 rows
+. . imported "INSIS_MIGRATION_EY"."MIGR_SRV_EVENT_LIST"  8.492 KB      48 rows
+. . imported "INSIS_MIGRATION_EY"."MIG_PROCESS_STEPS"    7.726 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."RLG_LOCK_TBL"         5.085 KB       1 rows
+Job "INSIS_MIGRATION_EY"."SYS_IMPORT_SCHEMA_01" successfully completed at Tue Jul 23 07:05:15 2019 elapsed 0 00:01:01
+About to load pdborcl-specific configuration data
+
+Table truncated.
+
+
+Table truncated.
+
+
+Table truncated.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+Data was loaded.
+old   1: Update ETL_SETUP_INFO set MIGG_SOURCES_DIR='&1&2' || 'MIGG_SOURCES'
+new   1: Update ETL_SETUP_INFO set MIGG_SOURCES_DIR='/migg/migg3/' || 'MIGG_SOURCES'
+old   2: 			,MIGG_DIR='&1'
+new   2: 			,MIGG_DIR='/migg/migg3'
+old   3: 			,MIGG_DIR_ARCHIVE='&1&2' || 'MIGG_ARCHIVE'
+new   3: 			,MIGG_DIR_ARCHIVE='/migg/migg3/' || 'MIGG_ARCHIVE'
+old   4: 			,CLIENT_MIGG_DIR='&1&2' || 'MIGG_CLIENTS'
+new   4: 			,CLIENT_MIGG_DIR='/migg/migg3/' || 'MIGG_CLIENTS'
+old   5: 			,CLIENT_MIGG_DIR_ARC='&1&2' || 'MIGG_CLIENTS_ARCHIVE'
+new   5: 			,CLIENT_MIGG_DIR_ARC='/migg/migg3/' || 'MIGG_CLIENTS_ARCHIVE'
+old   6: 			,OS_SLASH='&2'
+new   6: 			,OS_SLASH='/'
+
+1 row updated.
+
+About to create MIGR_INST_DIR and grant dir privileges to Migration schema
+old   1: create OR REPLACE directory MIGR_INST_DIR as '&1'
+new   1: create OR REPLACE directory MIGR_INST_DIR as '/media/sf_Shared/DZI/Migration/Code4DZI'
+
+Directory created.
+
+old   1: GRANT all on directory MIGR_INST_DIR to &2
+new   1: GRANT all on directory MIGR_INST_DIR to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+About to grant privileges to migration schema
+old   1:   GRANT ALTER ANY TABLE TO &1
+new   1:   GRANT ALTER ANY TABLE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.p_property TO &1  
+new   1:   GRANT SELECT ON INSIS_CUST.p_property TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON INSIS_CUST.p_property TO &1  
+new   1:   GRANT INSERT ON INSIS_CUST.p_property TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_CUST.p_property TO &1
+new   1:   GRANT UPDATE ON INSIS_CUST.p_property TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.p_property_ADDRESS TO &1  
+new   1:   GRANT SELECT ON INSIS_CUST.p_property_ADDRESS TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON INSIS_CUST.p_property_ADDRESS TO &1  
+new   1:   GRANT INSERT ON INSIS_CUST.p_property_ADDRESS TO INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_CUST.p_property_ADDRESS TO &1
+new   1:   GRANT UPDATE ON INSIS_CUST.p_property_ADDRESS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_SUBT TO &1
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_SUBT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_TRANSLATIONS TO &1
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_TRANSLATIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_GEN_V10.policy_endorsements TO &1
+new   1:   GRANT UPDATE ON INSIS_GEN_V10.policy_endorsements TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_sys_V10.doc_documents TO &1
+new   1:   GRANT UPDATE ON INSIS_sys_V10.doc_documents TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_CUST.CUST_POL_BO TO &1
+new   1:   GRANT EXECUTE ON INSIS_CUST.CUST_POL_BO TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON SYS.DBA_SCHEDULER_JOBS TO &1
+new   1:   GRANT SELECT ON SYS.DBA_SCHEDULER_JOBS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON SYS.DBMS_ALERT TO &1
+new   1:   GRANT EXECUTE ON SYS.DBMS_ALERT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON SYS.DBMS_ALERT_INFO TO &1
+new   1:   GRANT SELECT ON SYS.DBMS_ALERT_INFO TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO &1
+new   1:   GRANT SELECT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO &1
+new   1:   GRANT INSERT ON  INSIS_GEN_V10.POLICY_COMMISSIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT execute  ON INSIS_GEN_V10.P_COMMISSION_TYPE TO &1 
+new   1:   GRANT execute  ON INSIS_GEN_V10.P_COMMISSION_TYPE TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.CUST_CORRESPONDENCE TO &1
+new   1:   GRANT SELECT ON INSIS_CUST.CUST_CORRESPONDENCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON INSIS_CUST.CUST_CORRESPONDENCE TO &1
+new   1:   GRANT UPDATE ON INSIS_CUST.CUST_CORRESPONDENCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.POLICY_LABEL TO &1
+new   1:   GRANT SELECT ON INSIS_CUST.POLICY_LABEL TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.UW_LIST TO &1 
+new   1:   GRANT SELECT ON INSIS_CUST.UW_LIST TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT execute  ON INSIS_CUST.P_CUST_UWLIST_TYPE TO &1 
+new   1:   GRANT execute  ON INSIS_CUST.P_CUST_UWLIST_TYPE TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT execute ON INSIS_CUST.GVAR_CUST   TO &1 
+new   1:   GRANT execute ON INSIS_CUST.GVAR_CUST   TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:    GRANT execute ON INSIS_CUST.SRV_CUST_POL_DM  TO &1 
+new   1:    GRANT execute ON INSIS_CUST.SRV_CUST_POL_DM  TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_CUST.BOAT_REGISTRY TO &1
+new   1:   GRANT SELECT ON INSIS_CUST.BOAT_REGISTRY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT INSERT ON INSIS_CUST.BOAT_REGISTRY TO &1
+new   1:   GRANT INSERT ON INSIS_CUST.BOAT_REGISTRY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_blc_v10.blc_values TO &1
+new   1:   GRANT SELECT ON insis_gen_blc_v10.blc_values TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE ON insis_gen_blc_v10.blc_values TO &1
+new   1:   GRANT UPDATE ON insis_gen_blc_v10.blc_values TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON  insis_gen_blc_v10.blc_lookups  TO &1
+new   1:   GRANT SELECT ON  insis_gen_blc_v10.blc_lookups  TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:    GRANT UPDATE ON  insis_gen_blc_v10.blc_lookups  TO &1
+new   1:    GRANT UPDATE ON  insis_gen_blc_v10.blc_lookups  TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:                                     grant execute on INSIS_CUST.CUST_POL_DS  to &1
+new   1:                                     grant execute on INSIS_CUST.CUST_POL_DS  to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:                                     grant select on INSIS_SYS_V10.QUEST_QUESTIONS    to  &1
+new   1:                                     grant select on INSIS_SYS_V10.QUEST_QUESTIONS    to  INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:                                              grant execute on INSIS_SYS_V10.SYS_DAYS    to &1
+new   1:                                              grant execute on INSIS_SYS_V10.SYS_DAYS    to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:     GRANT UPDATE ON INSIS_GEN_V10.INSURED_OBJECT TO      &1 
+new   1:     GRANT UPDATE ON INSIS_GEN_V10.INSURED_OBJECT TO      INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:     GRANT EXECUTE ON  INSIS_CUST.PPL_TYPES TO &1
+new   1:     GRANT EXECUTE ON  INSIS_CUST.PPL_TYPES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT execute ON  INSIS_CUST.CUST_POL_DM    TO &1 
+new   1:   GRANT execute ON  INSIS_CUST.CUST_POL_DM    TO INSIS_MIGRATION_EY 
+
+Grant succeeded.
+
+old   1:   grant execute  on INSIS_CUST.SRV_CUST_BO to &1  
+new   1:   grant execute  on INSIS_CUST.SRV_CUST_BO to INSIS_MIGRATION_EY  
+
+Grant succeeded.
+
+old   1: GRANT SCHEDULER_ADMIN TO &1
+new   1: GRANT SCHEDULER_ADMIN TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CONNECT TO &1
+new   1: GRANT CONNECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT RESOURCE TO &1
+new   1: GRANT RESOURCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: grant execute on sys.dbms_lock to &1
+new   1: grant execute on sys.dbms_lock to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: grant DATAPUMP_IMP_FULL_DATABASE to &1
+new   1: grant DATAPUMP_IMP_FULL_DATABASE to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT MANAGE SCHEDULER TO &1
+new   1: GRANT MANAGE SCHEDULER TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG CONNECT SESSION TO &1
+new   1: GRANT DEBUG CONNECT SESSION TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY DIRECTORY TO &1
+new   1: GRANT CREATE ANY DIRECTORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE SYNONYM TO &1
+new   1: GRANT CREATE SYNONYM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE TABLE TO &1
+new   1: GRANT CREATE TABLE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE PROCEDURE TO &1
+new   1: GRANT CREATE PROCEDURE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE PUBLIC SYNONYM TO &1
+new   1: GRANT CREATE PUBLIC SYNONYM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY SYNONYM TO &1
+new   1: GRANT CREATE ANY SYNONYM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DROP ANY DIRECTORY TO &1
+new   1: GRANT DROP ANY DIRECTORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ANY PROCEDURE TO &1
+new   1: GRANT DEBUG ANY PROCEDURE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE VIEW TO &1
+new   1: GRANT CREATE VIEW TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY TABLE TO &1
+new   1: GRANT CREATE ANY TABLE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE JOB TO &1
+new   1: GRANT CREATE JOB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE SEQUENCE TO &1
+new   1: GRANT CREATE SEQUENCE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE SESSION TO &1
+new   1: GRANT CREATE SESSION TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE EXTERNAL JOB TO &1
+new   1: GRANT CREATE EXTERNAL JOB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY PROCEDURE TO &1
+new   1: GRANT CREATE ANY PROCEDURE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UNLIMITED TABLESPACE TO &1
+new   1: GRANT UNLIMITED TABLESPACE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_GEN_CFG_V10.GVAR_RB TO &1
+new   1: GRANT DEBUG ON INSIS_GEN_CFG_V10.GVAR_RB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO &1
+new   1: GRANT DEBUG ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.INSIS_CONTEXT TO &1
+new   1: GRANT DEBUG ON INSIS_SYS_V10.INSIS_CONTEXT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.PARAM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.PARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_CONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_CONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXTATR TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVCONTEXTATR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERR TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERRMSG TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVERRMSG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_ERROR TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_ERROR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVEVENT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVEVENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_LOG TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_LOG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVPARAM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVPARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_DOC TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_DOC TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_QUEST TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_QUEST TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_SYS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_SYS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_WFM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_PRM_WFM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYS_DS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYS_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRVSYSPARAMS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRVSYSPARAMS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_WFM_BO TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SRV_WFM_BO TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_BASE_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_BASE_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_ENV TO &1 WITH GRANT OPTION
+new   1: GRANT DEBUG ON INSIS_SYS_V10.SYS_ENV TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_GEN_CFG_V10.GVAR_RB TO &1
+new   1: GRANT EXECUTE ON INSIS_GEN_CFG_V10.GVAR_RB TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO &1
+new   1: GRANT EXECUTE ON INSIS_PEOPLE_V10.SRV_PEOPLE_DATA TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.INSIS_CONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.INSIS_CONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.PARAM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.PARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SERVICE_MENU_PROCESS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_CONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_CONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXTATR TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVCONTEXTATR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_DOCUMENT_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERR TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERRMSG TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVERRMSG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_ERROR TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_ERROR TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVEVENT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVEVENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_DOCUMENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_QUESTION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_EVENTS_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_LOG TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_LOG TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVPARAM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVPARAM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_DOC TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_DOC TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_QUEST TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_QUEST TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_SYS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_SYS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_WFM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_PRM_WFM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_QUESTION_DATA TO &1
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_QUESTION_DATA TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYS_DS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYS_DS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVSYSPARAMS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRVSYSPARAMS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_SYSTEM_DATA TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_WFM_BO TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SRV_WFM_BO TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_BASE_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_BASE_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_CONTEXT_UTILS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_ENV TO &1 WITH GRANT OPTION
+new   1: GRANT EXECUTE ON INSIS_SYS_V10.SYS_ENV TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.GEN_COVERS_SELECT TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.GEN_COVERS_SELECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.GEN_RISK_TERITORY TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.GEN_RISK_TERITORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.INSURED_OBJECT TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.INSURED_OBJECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.O_ADDEQUIPMENT TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.O_ADDEQUIPMENT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.O_OBJECTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.O_OBJECTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.O_SHIP TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_GEN_V10.O_SHIP TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ADDRESSES TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ADDRESSES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_ADDRESSES TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_ADDRESSES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_AGENTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_AGENTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_CONDITIONS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_CONDITIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_CONDITIONS TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY_CONDITIONS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_INFO TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_INFO TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS_SEQ TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS_SEQ TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PARTICIPANTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PREM_FLG TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_PREM_FLG TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ENDORSEMENTS TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.POLICY_ENDORSEMENTS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_V10.PREM_INST_INTERIM TO &1
+new   1: GRANT SELECT ON INSIS_GEN_V10.PREM_INST_INTERIM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.PREM_INST_INTERIM TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.PREM_INST_INTERIM TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON  INSIS_CUST.POLICY_RENEWALS_MIG_SEQ TO &1
+new   1: GRANT SELECT ON  INSIS_CUST.POLICY_RENEWALS_MIG_SEQ TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT INSERT ON  INSIS_CUST.POLICY_RENEWALS_MIG TO &1
+new   1: GRANT INSERT ON  INSIS_CUST.POLICY_RENEWALS_MIG TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ADDRESS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ADDRESS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_AGENTS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_AGENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_BENEFICIENTS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_BENEFICIENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_CLIENTS TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_CLIENTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_OFFICES TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_OFFICES TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_PEOPLE TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_PEOPLE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ROLE TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_PEOPLE_V10.P_ROLE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_UDFLD TO &1 WITH GRANT OPTION
+new   1: GRANT SELECT ON INSIS_GEN_CFG_V10.CPRS_OBJECT_UDFLD TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_COVERS_SELECT TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_COVERS_SELECT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_RISK_TERITORY TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.GEN_RISK_TERITORY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY TO &1
+new   1: GRANT UPDATE ON INSIS_GEN_V10.POLICY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT UPDATE on INSIS_GEN_V10.POLICY_ENDORSEMENTS to &1
+new   1: GRANT UPDATE on INSIS_GEN_V10.POLICY_ENDORSEMENTS to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT update on INSIS_GEN_V10.O_SHIP    to &1
+new   1: GRANT update on INSIS_GEN_V10.O_SHIP    to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT update on INSIS_SYS_V10.DOC_DOCUMENTS to &1
+new   1: GRANT update on INSIS_SYS_V10.DOC_DOCUMENTS to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:  GRANT update on INSIS_GEN_V10.POLICY   to &1
+new   1:  GRANT update on INSIS_GEN_V10.POLICY   to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT execute on INSIS_CUST.CUST_POL_BO to &1
+new   1:   GRANT execute on INSIS_CUST.CUST_POL_BO to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.POL_TYPES TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.POL_TYPES TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INSOBJ_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INSOBJ_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_POLICY_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_POLICY_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_COVER_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_COVER_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INDEMNITY_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_INDEMNITY_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.GVAR_PAS TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.GVAR_PAS TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.CURRENCY TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.CURRENCY TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_NAMES_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_AGENT_NAMES_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT UPDATE  ON INSIS_CUST.POLICY_EXTRA_ATTR TO &1
+new   1:   GRANT UPDATE  ON INSIS_CUST.POLICY_EXTRA_ATTR TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT  ON INSIS_GEN_V10.GEN_RISK_DISCOUNT TO &1
+new   1:   GRANT SELECT  ON INSIS_GEN_V10.GEN_RISK_DISCOUNT TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_DISCOUNT_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_DISCOUNT_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT  ON INSIS_GEN_V10.POLICY_ENGAGEMENT_BILLING TO &1
+new   1:   GRANT SELECT  ON INSIS_GEN_V10.POLICY_ENGAGEMENT_BILLING TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_ENGAGEMENT_BILLING_TYPE TO &1
+new   1:   GRANT EXECUTE ON INSIS_GEN_V10.P_ENGAGEMENT_BILLING_TYPE TO INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN_FRACT to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN_FRACT to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_POLICY_PAYMENT_PLAN to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION_FRACT to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION_FRACT to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.BLC_COMMISSION to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HST_OBJECT_TYPE to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HST_OBJECT_TYPE to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.gen_risk_covered to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.gen_risk_covered to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HS_GEN_COVER to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on insis_gen_v10.O_PROPERTY to &1 WITH GRANT OPTION
+new   1: GRANT select on insis_gen_v10.O_PROPERTY to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.HST_POLICY_STATE to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.HST_POLICY_STATE to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT select on INSIS_GEN_V10.O_ACCINSURED to &1 WITH GRANT OPTION
+new   1: GRANT select on INSIS_GEN_V10.O_ACCINSURED to INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON SYS.V_$THREAD to &1
+new   1: GRANT SELECT ON SYS.V_$THREAD to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: GRANT SELECT ON SYS.V_$parameter to &1
+new   1: GRANT SELECT ON SYS.V_$parameter to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_STAFF TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_STAFF TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_USER_ACCOUNTS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_PEOPLE_V10.P_USER_ACCOUNTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ANNEX TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ANNEX TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX_REASON TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.GEN_ANNEX_REASON TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ANNEX_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ANNEX_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HT_ANNEX_REASON TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HT_ANNEX_REASON TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_WAY TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_WAY TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_MODE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_PAYMENT_MODE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CFG_NL_PRODUCT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CFG_NL_PRODUCT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_LOB TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_LOB TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENG_POLICIES TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENG_POLICIES TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_v10.HST_ENG_POLICY_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_v10.HST_ENG_POLICY_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENGAGEMENT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.POLICY_ENGAGEMENT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ENGAGEMENT_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ENGAGEMENT_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_v10.HST_POLICY_STATE_AUX TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_v10.HST_POLICY_STATE_AUX TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_covers TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_covers TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.CPR_COVER TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.CPR_COVER TO INSIS_MIGRATION_EY WITH GRANT OPTION
+  GRANT SELECT ON insis_gen_cfg_v10.CPR_COVER TO INSIS_MIGRATION_EY WITH GRANT OPTION
+                                    *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.CFG_NL_PRODUCT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.CFG_NL_PRODUCT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_STATUS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.SYSCFG_PRODUCT_STATUS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_GL_FRACT TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_GL_FRACT TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_TARIFF_RULE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_TARIFF_RULE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_COVER_DESIGNATION TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_COVER_DESIGNATION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_IV_RULE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_IV_RULE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_PRODUCT_LOB TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.SYSCFG_PRODUCT_LOB TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_product TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_product TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_objects TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON insis_gen_cfg_v10.cfg_nl_objects TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPR_OBJECTS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_CFG_V10.CPR_OBJECTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+  GRANT SELECT ON INSIS_GEN_CFG_V10.CPR_OBJECTS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+                                    *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.insured_object TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.insured_object TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ACTIVITY_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_ACTIVITY_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_TYPE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_TYPE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE_AUX TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_POLICY_STATE_AUX TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_BASE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_IV_BASE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_DUR_DIMENSION TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_DUR_DIMENSION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_OBJECT_STATE TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_OBJECT_STATE TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCATION_RISK_CLASS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCATION_RISK_CLASS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCVAL_DIMENSION TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HST_LOCVAL_DIMENSION TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.HT_RISK_CLASS TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.HT_RISK_CLASS TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+old   1:   GRANT SELECT ON INSIS_GEN_V10.gen_annex TO &1 WITH GRANT OPTION
+new   1:   GRANT SELECT ON INSIS_GEN_V10.gen_annex TO INSIS_MIGRATION_EY WITH GRANT OPTION
+
+Grant succeeded.
+
+About to install packages
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Package body created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Package body created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Package body created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Package body created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+Package body created.
+
+
+Package body created.
+
+Packages installed.
+About to run Migration Setup. This will take a while...
+Migration setup is performed.                                                   
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+About to install archive schema code and grant relative privileges to migration user
+
+Procedure created.
+
+
+Procedure created.
+
+old   1: grant all on DROP_TBL to &1
+new   1: grant all on DROP_TBL to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+old   1: grant all on GRANT_ALL_TBL  to &1
+new   1: grant all on GRANT_ALL_TBL  to INSIS_MIGRATION_EY
+
+Grant succeeded.
+
+About to run archive schema setup
+old   7:     update etl_setup_info set ARCHIVE_SCHEMA='&1';
+new   7:     update etl_setup_info set ARCHIVE_SCHEMA='INSIS_MIGRATION_EY_ARC';
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+Sanity check follows
+Migration System deployment was not successful.                                 
+Please, send the log to NyttSakSystem.                                          
+
+PL/SQL procedure successfully completed.
+
+For deployment status, please refer to Spool.txt which resides in the deployment folder.
+Migration Deployment is finished!
+Deployment finished at 2019-07-23 07:11:05
+Deployment started at 2019-07-23 07:00:16

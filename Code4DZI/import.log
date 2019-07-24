@@ -1,0 +1,97 @@
+;;; 
+Import: Release 12.1.0.2.0 - Production on Tue Jul 23 07:04:07 2019
+
+Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+Master table "INSIS_MIGRATION_EY"."SYS_IMPORT_SCHEMA_01" successfully loaded/unloaded
+Starting "INSIS_MIGRATION_EY"."SYS_IMPORT_SCHEMA_01":  INSIS_MIGRATION_EY/********@localhost:1521/pdborcl PARFILE=restore_ETL_HST_data1.par remap_schema=INSIS_MIGRATION_LF:INSIS_MIGRATION_EY LOGFILE=import.log 
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+. . imported "INSIS_MIGRATION_EY"."ETL_ENGINE"           6.434 MB    2461 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_REPORTS_DEF"      516.1 KB      22 rows
+. . imported "INSIS_MIGRATION_EY"."HST_GEN_DISCOUNTS"    581.2 KB     359 rows
+. . imported "INSIS_MIGRATION_EY"."HST_GEN_DISCOUNTS_COPY"  300.9 KB     191 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_OUTHOUSE_LABELS_MAP"  238.2 KB    8650 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGR_MAPS_INTERMEDIATE"  169.0 KB     160 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_OFF_DEF"          131.3 KB     455 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_POL_OBJECT_DEF"   123.8 KB      62 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_PRODUCT_DEF"      96.81 KB     128 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_SA_IA"            116.1 KB     172 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OFFER_QUESTIONS"  97.96 KB     159 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BUILDING_VILLA_QUESTIONS"  48.60 KB      62 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_COOP_QUESTIONS"  66.75 KB      90 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_ONLY_QUESTIONS"  68.46 KB      90 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_CONT_ONLY_QUEST"  49.87 KB      62 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_COOP_QUESTIONS"  52.75 KB      65 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_H_QUESTIONS"  48.53 KB      61 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_MOBILE_H_QUESTIONS"  49.37 KB      61 rows
+. . imported "INSIS_MIGRATION_EY"."HST_POLICY_DEDUCTIBLES"  40.90 KB     828 rows
+. . imported "INSIS_MIGRATION_EY"."HST_VILLAHEM_QUESTIONS"  62.57 KB      85 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_API_PREFERENCES"  6.039 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_API_STEPS"        6.687 KB      11 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_BOLAG_INFO"       8.351 KB      23 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_COVER_UPDATE_RULES"     10 KB      14 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_EMAIL_LIST"       7.585 KB      35 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_EMAIL_NOTIFICATIONS"  10.10 KB      29 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_IA_INSRPRD_CONFIG"  16.42 KB      16 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_JOB_CONFIGURATION"  9.484 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_LOCK_CONFIGURATION"  6.429 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGG_SOURCES"     30.24 KB     748 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGRATION_CONDITIONS"  8.687 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGRATION_RULES"  23.94 KB      31 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_MIGR_FLD_RULES"   10.70 KB      12 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_OBJ_EXCLUSION_RULES"  12.47 KB      51 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_PARALLEL_LEVEL_PER_TIME"  7.078 KB      24 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_PROCESS_RESUME_CONFIG"  7.437 KB      12 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_PRODUCT_OBJECTS"  14.64 KB      62 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_SETUP_INFO"       23.26 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_TBL_DEF"          16.97 KB      56 rows
+. . imported "INSIS_MIGRATION_EY"."ETL_VIEW_TBLS"        20.88 KB     441 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ACCIDENT_COVERS"  9.960 KB       9 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ACCIDENT_TYPES"   7.695 KB       6 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ACC_ENDORSEMENTS"  9.937 KB      30 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ACC_LUST_QUEST"   9.406 KB       2 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ADDRESS_TYPES"    6.492 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ALL_RISK_TYPES"   6.320 KB      13 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_COVERS"      10.78 KB       9 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_ENGINE_TYPES"  8.179 KB       7 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_MTRL"        7.335 KB      10 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_QUESTIONS"   11.50 KB       8 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BOAT_TYPES"       7.476 KB       4 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BUILDING_VILLA_COVERS"  17.39 KB      22 rows
+. . imported "INSIS_MIGRATION_EY"."HST_BUILDING_VILLA_TYPES"  7.890 KB       9 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_COOP_COVERS"  13.57 KB      13 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_COOP_TYPES"  8.093 KB      14 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_ONLY_COVERS"  12.69 KB      11 rows
+. . imported "INSIS_MIGRATION_EY"."HST_CONTENT_ONLY_TYPES"  7.984 KB      12 rows
+. . imported "INSIS_MIGRATION_EY"."HST_COVER_DEDUCTIBLES"  15.43 KB      90 rows
+. . imported "INSIS_MIGRATION_EY"."HST_DEFAULT_AGENT"    5.851 KB      23 rows
+. . imported "INSIS_MIGRATION_EY"."HST_ENDORSEMENTS"     9.476 KB       2 rows
+. . imported "INSIS_MIGRATION_EY"."HST_HOME_TYPES"       9.031 KB      18 rows
+. . imported "INSIS_MIGRATION_EY"."HST_INDIVIDUAL_COV_COVERS"  11.33 KB       9 rows
+. . imported "INSIS_MIGRATION_EY"."HST_INDIVIDUAL_COV_TYPES"  7.695 KB       8 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_CONT_ONLY_COVERS"  8.835 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_CONT_ONLY_TYPES"  7.343 KB       1 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_COOP_COVERS"  9.265 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_COOP_TYPES"  7.382 KB       2 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_COVERS"   16.83 KB      18 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_HOME_TYPES"  7.640 KB       6 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_MOBILE_COVERS"  11.60 KB       7 rows
+. . imported "INSIS_MIGRATION_EY"."HST_LEISURE_MOB_HOME_TYPES"  7.429 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."HST_MAND_DOCUMENTS"   30.78 KB     132 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OBJECT_DEDUCTIBLES"  11.17 KB     217 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OBJECT_DEDUCTIBLES_COPY"  11.17 KB     216 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OFFER_QUESTIONS_NO_CR"  41.27 KB      65 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OFFICES"          10.60 KB      24 rows
+. . imported "INSIS_MIGRATION_EY"."HST_OUTHOUSE_LABELS"  10.85 KB      52 rows
+. . imported "INSIS_MIGRATION_EY"."HST_POLICY_DEDUCTIBLES_COPY"  39.81 KB     802 rows
+. . imported "INSIS_MIGRATION_EY"."HST_SE_BANK_NUMBER"   9.546 KB      55 rows
+. . imported "INSIS_MIGRATION_EY"."HST_TRAVEL_COVERS"    9.929 KB       5 rows
+. . imported "INSIS_MIGRATION_EY"."HST_TRAVEL_TYPES"     7.437 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."HST_UNION_NAME"       6.734 KB      71 rows
+. . imported "INSIS_MIGRATION_EY"."HST_VILLAHEM_COVERS"  17.97 KB      28 rows
+. . imported "INSIS_MIGRATION_EY"."MIGR_SRV_EVENT_LIST"  8.492 KB      48 rows
+. . imported "INSIS_MIGRATION_EY"."MIG_PROCESS_STEPS"    7.726 KB       3 rows
+. . imported "INSIS_MIGRATION_EY"."RLG_LOCK_TBL"         5.085 KB       1 rows
+Job "INSIS_MIGRATION_EY"."SYS_IMPORT_SCHEMA_01" successfully completed at Tue Jul 23 07:05:15 2019 elapsed 0 00:01:01
