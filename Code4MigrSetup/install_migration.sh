@@ -101,7 +101,7 @@ dbl_echo ()
 	fi
 	if  ! $exists ; then 
 		dbl_echo "Either abovementioned files do not exist in folder, or their file names are not the above.  Take care of that and Rerun batch file" 
-		chmod 777 $dir/*
+		chmod 770 $dir/*
   		exit 0
 	  fi
 	}
@@ -180,10 +180,10 @@ create_filesystem ()
 		do 
 				if [ ! -e ${migg2_dir}/$X ]; then  
 					mkdir ${migg2_dir}/$X
-					chmod 777 ${migg2_dir}/$X
+					chmod 770 ${migg2_dir}/$X
 					echo "${migg2_dir}/$X was created" >> ${dir}/spool.txt
 				else
-				    chmod 777 ${migg2_dir}/$X
+				    chmod 770 ${migg2_dir}/$X
 					echo "${migg2_dir}/$X already exists" >> ${dir}/spool.txt 
 				fi		
 		done
@@ -191,10 +191,10 @@ create_filesystem ()
 		do 
 			if [ ! -e ${migg2_dir}/MIGG_ARCHIVE/$X ] ; then
 				mkdir ${migg2_dir}/MIGG_ARCHIVE/$X
-				chmod 777 ${migg2_dir}/MIGG_ARCHIVE/$X
+				chmod 770 ${migg2_dir}/MIGG_ARCHIVE/$X
 				echo "${migg2_dir}/MIGG_ARCHIVE/$X was created" >> ${dir}/spool.txt
 			else 
-			    chmod 777 ${migg2_dir}/MIGG_ARCHIVE/$X
+			    chmod 770 ${migg2_dir}/MIGG_ARCHIVE/$X
 				echo "${migg2_dir}/MIGG_ARCHIVE/$X already exists" >> ${dir}/spool.txt 
 			fi		
 		done
@@ -203,7 +203,7 @@ create_filesystem ()
 		else 
 			echo "MIGG.xlsx already exists in MIGG_SOURCES directory" >> ${dir}/spool.txt 
 		fi
-		chmod 777 ${migg2_dir}/MIGG_SOURCES/MIGG.xlsx 
+		chmod 770 ${migg2_dir}/MIGG_SOURCES/MIGG.xlsx 
 		dbl_echo "About to return to Installation directory path"  
 		cd $dir
    }
@@ -221,7 +221,7 @@ check_db_entities ()
 
 	if [ ! -e file.txt ]; then 
 		echo "file.txt was not created. Error in tablespaces check" >> spool.txt 
-                chmod 777 $dir/*
+                chmod 770 $dir/*
 		exit 0
 	fi 
 
@@ -309,7 +309,7 @@ regentblspace ()
 		else 
 			#echo "ORA- found in environment creation" >> spool.txt
 			dbl_echo "ORA- found in environment creation" 
-			chmod 777 $dir/*
+			chmod 770 $dir/*
 			exit 0
 		fi
                     
@@ -326,7 +326,7 @@ regentblspace ()
 		grep "$schema" chk_ConnStr.txt
 		if [ $? -eq 1 ] ; then
 			dbl_echo "issues with $schema Connection String" 
-			chmod 777 $dir/*
+			chmod 770 $dir/*
 			exit 0
 		else 
 			#echo "$schema Connection String ok" >> spool.txt
@@ -344,7 +344,7 @@ regentblspace ()
 		grep "$arch_schema" chk_ConnStr.txt
 		if [ $? -eq 1 ] ; then
 			dbl_echo "issues with %arch_schema% Connection String" 
-			chmod 777 $dir/*
+			chmod 770 $dir/*
 			exit 0
 		else
 			#echo "$arch_schema Connection String ok" >> spool.txt
@@ -434,7 +434,7 @@ insert_data ()
 
 	if [ ! -e rec_count.txt ] ; then
 		dbl_echo "error in check for existing configuration data"  
-		chmod 777 $dir/*
+		chmod 770 $dir/*
 		exit 0		
 	fi
 
@@ -473,7 +473,7 @@ insert_data ()
 
 	if [ $? -ne 0 ] ; then
 		dbl_echo "Error in impdp par file dynamic creation"  
-		chmod 777 $dir/*
+		chmod 770 $dir/*
 		exit 0 
 	fi
 
@@ -492,7 +492,7 @@ insert_data ()
 	else 
 		#echo "ERROR. No IMPDP logfile" >> spool.txt
 		dbl_echo "ERROR. No IMPDP logfile" 
-		chmod 777 $dir/*
+		chmod 770 $dir/*
 		exit 0 
 	fi
 
@@ -506,7 +506,7 @@ insert_data ()
 	dbl_echo "Data was loaded."
 
 	if [ $mode -eq 2 ]; then
-		chmod 777 $dir/*
+		chmod 770 $dir/*
 		exit 0
 	else 	
 	    #sqlplus $ConnStringSchema  @add_os_slash.sql
@@ -520,7 +520,7 @@ insert_data ()
 			dbl_echo "Target Schema is not empty. Data will not be loaded and Deployment will stop!"
 			rm rec_count1.txt
 			rm rec_count.txt
-			chmod 777 $dir/*
+			chmod 770 $dir/*
 			exit 0
 		fi
 	}
@@ -570,7 +570,7 @@ insert_packages ()
 	
 #Main Program ------------------------------------------------------------------------
    clear
-   chmod 777 *
+   chmod 770 *
 ##added for ora_inv 20190708
   source setDB.env
 ## end added  
@@ -645,21 +645,21 @@ insert_packages ()
 				insert_packages
 				export dir1_flag=0
 				cd $dir
-       			chmod 777 *
+       			chmod 770 *
 			;;
 
 			2) 
 			insert_data
 			export mode_flag=0
 			cd $dir
-                        chmod 777 $dir/*
+                        chmod 770 $dir/*
 			;;
 
 			3) 
 			insert_packages
 			export mode_flag=0
 			cd $dir
-        	chmod 777 *
+        	chmod 770 *
 			;;
 			
 			4)
@@ -686,7 +686,7 @@ insert_packages ()
 	
 	echo "Exiting programm"
 	cd $dir
-        chmod 777 *
-        chmod 777 $dir/spool.txt
+        chmod 770 *
+        chmod 770 $dir/spool.txt
         dbl_echo  "$dir/spool.txt"
 	exit 0	
